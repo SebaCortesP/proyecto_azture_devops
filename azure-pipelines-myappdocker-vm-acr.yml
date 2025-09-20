@@ -4,19 +4,19 @@ trigger:
       - main
 
 variables:
-  VM_IP_PUBLICA: '48.211.160.12'  # Se debe colocar la IP pública de tu máquina virtual
-  IMAGE_NAME: 'myapp-nginx-s4'  # Se debe colocar el Nombre de la imagen que será descargada desde ACR
-  ACR_NAME: 'myappdevops'  # Se debe colocar el Nombre de tu Azure Container Registry (ACR)
-  ACR_USERNAME: 'myappdevops'  # Se debe colocar el Nombre de usuario del ACR
-  ACR_PASSWORD: 'gZd5xvFW9eCE3XG8P8B+mNxPLwqpGaCatRSihhqB9e+ACRBU6USe'  # Se debe colocar la Contraseña del ACR
+  VM_IP_PUBLICA: '68.154.3.25'  # Se debe colocar la IP pública de tu máquina virtual
+  IMAGE_NAME: 'sumativa2g14-nginx-s4'  # Se debe colocar el Nombre de la imagen que será descargada desde ACR
+  ACR_NAME: 'sumativa2g14'  # Se debe colocar el Nombre de tu Azure Container Registry (ACR)
+  ACR_USERNAME: 'sumativa2g14'  # Se debe colocar el Nombre de usuario del ACR
+  ACR_PASSWORD: 'qN+0ha05VxNmS+ozO6FasxcjDtS4IpTn2CGl0Hak3h+ACRD6P2XK'  # Se debe colocar la Contraseña del ACR
 
 stages:
   - stage: Deploy
     jobs:
       - deployment: DeployToVM
-        displayName: 'Deploy to VM'
+        displayName: 'Deploy to VM Sumativa'
         environment:
-          name: 'VM-DEVOPS-S4'  # Nombre del entorno configurado en Azure DevOps
+          name: 'Sumativa2VM'  # Nombre del entorno configurado en Azure DevOps
           resourceType: VirtualMachine  # Especifica que se conecta a una máquina virtual
         strategy:
           runOnce:
