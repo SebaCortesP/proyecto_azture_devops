@@ -1,7 +1,7 @@
 trigger:
   branches:
     include:
-      - master
+      - main
 
 variables:
   VM_IP_PUBLICA: '68.154.3.25'  # Se debe colocar la IP pública de tu máquina virtual
