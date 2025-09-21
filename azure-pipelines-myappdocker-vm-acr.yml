@@ -18,7 +18,7 @@ stages:
         environment:
           name: 'Sumativa2VM'  # Nombre del entorno configurado en Azure DevOps
           resourceType: VirtualMachine  # Especifica que se conecta a una máquina virtual
-          resourceName: 'VMSumativa1Grupo144'
+          resourceName: 'VMSumativa1Grupo14'
         strategy:
           runOnce:
             deploy:
