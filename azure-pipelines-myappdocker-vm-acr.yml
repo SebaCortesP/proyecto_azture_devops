@@ -16,9 +16,9 @@ stages:
       - deployment: DeployToVM
         displayName: 'Deploy to VM Sumativa'
         environment:
-          name: 'SandboxHost-638939746344367724'  # Nombre del entorno configurado en Azure DevOps
+          name: 'Sumativa2VM'  # Nombre del entorno configurado en Azure DevOps
           resourceType: VirtualMachine  # Especifica que se conecta a una máquina virtual
-          # resourceName: 'SandboxHost-638939746344367724'
+          resourceName: 'SandboxHost-638939746344367724'
         strategy:
           runOnce:
             deploy:
